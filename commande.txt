@@ -1,5 +1,0 @@
-git add apps/
-
-git commit -m "Ajout du dossier apps"
-
-git push origin init_projet
