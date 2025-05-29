@@ -1,0 +1,479 @@
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/googleapiclient/model.py:30: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pkg_resources/__init__.py:3146: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pytz/tzinfo.py:27: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  _epoch = datetime.utcfromtimestamp(0)
+2025-05-29 08:33:02,116 [Job erpnext.localhost||da8b5f1a-7da8-4f6b-be11-9cadf6256305]: exception raised while executing (frappe.utils.background_jobs.execute_job)
+Traceback (most recent call last):
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py", line 1643, in perform_job
+    return_value = job.perform()
+                   ^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/job.py", line 1344, in perform
+    self._result = self._execute()
+                   ^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/job.py", line 1378, in _execute
+    result = self.func(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/utils/background_jobs.py", line 270, in execute_job
+    retval = method(**kwargs)
+             ^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/setup/demo.py", line 26, in setup_demo_data
+    make_transactions(company)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/setup/demo.py", line 114, in make_transactions
+    create_transaction(item, company, start_date)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/setup/demo.py", line 141, in create_transaction
+    doc.save(ignore_permissions=True)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 484, in save
+    return self._save(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 506, in _save
+    return self.insert()
+           ^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 414, in insert
+    self.run_before_save_methods()
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 1277, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 1128, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 1517, in composer
+    return composed(self, method, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 1495, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/document.py", line 1125, in fn
+    return method_object(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/buying/doctype/purchase_order/purchase_order.py", line 200, in validate
+    super().validate()
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/controllers/buying_controller.py", line 33, in validate
+    super().validate()
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/controllers/subcontracting_controller.py", line 56, in validate
+    super().validate()
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/controllers/stock_controller.py", line 52, in validate
+    super().validate()
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/controllers/accounts_controller.py", line 222, in validate
+    self.set_missing_values(for_validate=True)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/buying/doctype/purchase_order/purchase_order.py", line 700, in set_missing_values
+    super().set_missing_values(for_validate)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/controllers/buying_controller.py", line 167, in set_missing_values
+    get_party_details(
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/utils/typing_validations.py", line 32, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/accounts/party.py", line 81, in get_party_details
+    return _get_party_details(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/accounts/party.py", line 143, in _get_party_details
+    set_contact_details(party_details, party, party_type)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/accounts/party.py", line 349, in set_contact_details
+    party_details.contact_person = get_default_contact(party_type, party.name)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext/erpnext/accounts/party.py", line 1030, in get_default_contact
+    contacts = frappe.get_all(
+               ^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/__init__.py", line 1762, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/__init__.py", line 1737, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/db_query.py", line 209, in execute
+    result = self.build_and_run()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/model/db_query.py", line 250, in build_and_run
+    return frappe.db.sql(
+           ^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/database/database.py", line 260, in sql
+    self.execute_query(query, values)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/apps/frappe/frappe/database/database.py", line 355, in execute_query
+    return self._cursor.execute(query, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'tabContact.is_billing_contact' in 'WHERE'")
+
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/rq/worker.py:1305: DeprecationWarning: This process (pid=13920) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  child_pid = os.fork()
+/home/valea/Documents/Eval/ERPNext_Existant/env/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  from crypt import crypt as _crypt
