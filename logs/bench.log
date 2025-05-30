@@ -33,4 +33,106 @@
 2025-05-29 08:30:27,734 INFO /home/valea/.local/bin/bench serve --port 8000
 2025-05-29 08:30:27,763 INFO /home/valea/.local/bin/bench worker
 2025-05-29 08:30:27,770 INFO /home/valea/.local/bin/bench watch
+
+2025-05-29 09:07:49,241 INFO /home/valea/.local/bin/bench --site erpnext.localhost set-config developer_mode 1
+2025-05-30 08:48:51,514 INFO /home/valea/.local/bin/bench start
+2025-05-30 08:48:51,728 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-05-30 08:48:51,732 INFO /home/valea/.local/bin/bench watch
+2025-05-30 08:48:51,741 INFO /home/valea/.local/bin/bench worker
+2025-05-30 08:48:51,744 INFO /home/valea/.local/bin/bench schedule
+2025-05-30 08:51:07,237 INFO /home/valea/.local/bin/bench --site erpnext.localhost console
+2025-05-30 08:58:22,009 INFO /home/valea/.local/bin/bench version
+2025-05-30 09:00:49,897 INFO /home/valea/.local/bin/bench new-site hrms.local
+2025-05-30 09:16:41,475 INFO /home/valea/.local/bin/bench get-app erpnext
+2025-05-30 09:16:45,335 INFO App moved from apps/erpnext to archived/apps/erpnext-2025-05-30
+2025-05-30 09:16:45,337 LOG Getting erpnext
+2025-05-30 09:16:45,337 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch develop --depth 1 --origin upstream
+2025-05-30 09:19:29,506 LOG Installing erpnext
+2025-05-30 09:19:29,507 DEBUG cd /home/valea/Documents/Eval/ERPNext_Existant && /home/valea/Documents/Eval/ERPNext_Existant/env/bin/python -m pip install --quiet --upgrade -e /home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext 
+2025-05-30 09:19:33,958 DEBUG cd /home/valea/Documents/Eval/ERPNext_Existant/apps/erpnext && yarn install --check-files
+2025-05-30 09:19:43,650 DEBUG bench build --app erpnext
+2025-05-30 09:19:43,765 INFO /home/valea/.local/bin/bench build --app erpnext
+2025-05-30 09:19:55,757 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 09:20:34,835 INFO /home/valea/.local/bin/bench get-app hrms
+2025-05-30 09:20:52,590 LOG Getting hrms
+2025-05-30 09:20:52,591 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2025-05-30 09:28:03,529 WARNING cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream executed with exit code 128
+2025-05-30 09:28:03,529 WARNING /home/valea/.local/bin/bench get-app hrms executed with exit code 1
+2025-05-30 09:29:07,935 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 09:29:50,127 INFO /home/valea/.local/bin/bench get-app hrms
+2025-05-30 09:29:57,045 LOG Getting hrms
+2025-05-30 09:29:57,046 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2025-05-30 09:36:23,489 WARNING /home/valea/.local/bin/bench get-app hrms executed with exit code 1
+2025-05-30 09:43:53,560 INFO /home/valea/.local/bin/bench get-app hrms
+2025-05-30 09:44:18,811 WARNING /home/valea/.local/bin/bench get-app hrms executed with exit code 1
+2025-05-30 09:44:22,388 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 09:44:32,366 INFO /home/valea/.local/bin/bench get-app hrms
+2025-05-30 09:44:36,054 LOG Getting hrms
+2025-05-30 09:44:36,054 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2025-05-30 09:45:46,655 LOG Installing hrms
+2025-05-30 09:45:46,655 DEBUG cd /home/valea/Documents/Eval/ERPNext_Existant && /home/valea/Documents/Eval/ERPNext_Existant/env/bin/python -m pip install --quiet --upgrade -e /home/valea/Documents/Eval/ERPNext_Existant/apps/hrms 
+2025-05-30 09:45:49,279 DEBUG cd /home/valea/Documents/Eval/ERPNext_Existant/apps/hrms && yarn install --check-files
+2025-05-30 09:48:06,280 WARNING /home/valea/.local/bin/bench get-app hrms executed with exit code 1
+2025-05-30 09:48:15,061 INFO /home/valea/.local/bin/bench drop-site hrms.local
+2025-05-30 09:51:56,612 INFO /home/valea/.local/bin/bench get-app hrms
+2025-05-30 09:51:58,722 INFO App moved from apps/hrms to archived/apps/hrms-2025-05-30
+2025-05-30 09:51:58,727 LOG Getting hrms
+2025-05-30 09:51:58,727 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git --branch develop --depth 1 --origin upstream
+2025-05-30 10:02:33,375 LOG Installing hrms
+2025-05-30 10:02:33,375 DEBUG cd /home/valea/Documents/Eval/ERPNext_Existant && /home/valea/Documents/Eval/ERPNext_Existant/env/bin/python -m pip install --quiet --upgrade -e /home/valea/Documents/Eval/ERPNext_Existant/apps/hrms 
+2025-05-30 10:02:35,618 DEBUG cd /home/valea/Documents/Eval/ERPNext_Existant/apps/hrms && yarn install --check-files
+2025-05-30 10:26:03,324 DEBUG bench build --app hrms
+2025-05-30 10:26:03,440 INFO /home/valea/.local/bin/bench build --app hrms
+2025-05-30 10:26:26,151 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 10:26:45,201 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms
+2025-05-30 10:28:18,767 INFO /home/valea/.local/bin/bench restart
+2025-05-30 10:28:20,473 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 10:28:25,530 INFO /home/valea/.local/bin/bench start
+2025-05-30 10:28:25,735 INFO /home/valea/.local/bin/bench schedule
+2025-05-30 10:28:25,735 INFO /home/valea/.local/bin/bench watch
+2025-05-30 10:28:25,736 INFO /home/valea/.local/bin/bench worker
+2025-05-30 10:28:25,737 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-05-30 10:32:21,885 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms
+2025-05-30 10:33:20,628 INFO /home/valea/.local/bin/bench --site erpnext.localhost migrate
+2025-05-30 10:33:32,264 INFO /home/valea/.local/bin/bench --site erpnext.localhost clear-cache
+2025-05-30 10:33:40,657 INFO /home/valea/.local/bin/bench --site erpnext.localhost clear-website-cache
+2025-05-30 10:34:14,485 INFO /home/valea/.local/bin/bench --site erpnext.localhost build
+2025-05-30 10:35:00,773 INFO /home/valea/.local/bin/bench restart
+2025-05-30 10:35:06,902 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 10:35:13,215 INFO /home/valea/.local/bin/bench start
+2025-05-30 10:35:13,425 INFO /home/valea/.local/bin/bench worker
+2025-05-30 10:35:13,425 INFO /home/valea/.local/bin/bench schedule
+2025-05-30 10:35:13,445 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-05-30 10:35:13,446 INFO /home/valea/.local/bin/bench watch
+2025-05-30 10:43:52,829 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms --force
+2025-05-30 10:44:45,871 INFO /home/valea/.local/bin/bench start
+2025-05-30 10:44:46,071 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-05-30 10:44:46,072 INFO /home/valea/.local/bin/bench schedule
+2025-05-30 10:44:46,132 INFO /home/valea/.local/bin/bench watch
+2025-05-30 10:44:46,132 INFO /home/valea/.local/bin/bench worker
+2025-05-30 10:45:51,437 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms --force
+2025-05-30 10:48:09,185 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms --force
+2025-05-30 10:49:45,789 INFO /home/valea/.local/bin/bench status
+2025-05-30 10:50:16,318 INFO /home/valea/.local/bin/bench status
+2025-05-30 10:53:44,973 INFO /home/valea/.local/bin/bench restart
+2025-05-30 10:53:46,902 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 10:53:56,499 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms --force
+2025-05-30 10:54:46,193 INFO /home/valea/.local/bin/bench set-config redis_queue redis://localhost:11000
+2025-05-30 10:54:46,789 INFO /home/valea/.local/bin/bench set-config redis_socketio redis://localhost:11000
+2025-05-30 10:54:47,386 INFO /home/valea/.local/bin/bench set-config redis_cache redis://localhost:11000
+2025-05-30 10:55:00,470 INFO /home/valea/.local/bin/bench set-config redis_queue redis://localhost:11000
+2025-05-30 10:58:15,407 INFO /home/valea/.local/bin/bench restart
+2025-05-30 11:01:53,647 INFO /home/valea/.local/bin/bench restart
+2025-05-30 11:01:58,272 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-05-30 11:02:03,385 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms --force
+2025-05-30 11:06:04,059 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms --force
+2025-05-30 11:09:13,168 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app hrms --force
+2025-05-30 11:10:03,961 INFO /home/valea/.local/bin/bench start
+2025-05-30 11:10:14,633 INFO /home/valea/.local/bin/bench start
+2025-05-30 11:11:21,573 INFO /home/valea/.local/bin/bench start
+2025-05-30 11:14:02,927 INFO /home/valea/.local/bin/bench start
+2025-05-30 11:14:03,138 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-05-30 11:14:03,139 INFO /home/valea/.local/bin/bench worker
+2025-05-30 11:14:03,157 INFO /home/valea/.local/bin/bench watch
+2025-05-30 11:14:03,158 INFO /home/valea/.local/bin/bench schedule
 2025-05-29 09:07:49,241 INFO /home/valea/.local/bin/bench --site erpnext.localhost set-config developer_mode 1
