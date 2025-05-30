@@ -2653,3 +2653,9 @@ index creation(creation))
 			ROW_FORMAT=DYNAMIC
 			CHARACTER SET=utf8mb4
 			COLLATE=utf8mb4_unicode_ci
+2025-05-30 09:48:21,628 WARNING database DDL Query made to DB:
+DROP DATABASE IF EXISTS `_f587c75303d9148c`
+2025-05-30 09:48:21,629 WARNING database DDL Query made to DB:
+DROP USER IF EXISTS '_f587c75303d9148c'@'%'
+2025-05-30 09:48:21,630 WARNING database DDL Query made to DB:
+DROP USER IF EXISTS '_f587c75303d9148c'@'localhost'

@@ -8,13 +8,25 @@ git push origin init_projet
 
 # Framework
 
-redis-server --port 11000
 
 bench --site erpnext.localhost clear-cache
+
+## redis 
+redis-server --port 11000
 
 sudo lsof -i :11000 -i :13000
 
 sudo kill -9 
+
+service redis stop
+
+S'il y a une erreur comme ca 
+An error occurred while installing hrms: Error 111 connecting to 127.0.0.1:13000. Connection refused.
+Please make sure that Redis Queue runs @ redis://127.0.0.1:11000. Redis reported error: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+
+redis-server config/redis_cache.conf
+
+
 
 bench --site erpnext.localhost set-config developer_mode 1
 
@@ -31,3 +43,34 @@ $ bench get-app erpnext
 $ bench get-app hrms
 $ bench --site hrms.local install-app hrms
 $ bench --site hrms.local add-to-hosts
+
+bench drop-site hrms.local
+
+rm -rf sites/hrms.local
+
+sudo nano /etc/hosts
+Repère la ligne comme celle-ci :
+
+lua
+Copier
+Modifier
+127.0.0.1 hrms.local
+Soit tu la supprimes, soit tu la commentes :
+
+bash
+Copier
+Modifier
+# 127.0.0.1 hrms.local
+127.0.0.1
+Aina
+bench get-app hrms
+bench --site erpnext.localhost install-app hrms
+bench restart
+
+bench --site erpnext.localhost migrate
+bench --site erpnext.localhost clear-cache
+bench --site erpnext.localhost clear-website-cache
+bench --site erpnext.localhost build
+bench restart
+
+bench --site erpnext.localhost install-app hrms --force
