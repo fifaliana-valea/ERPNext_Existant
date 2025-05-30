@@ -1,0 +1,4 @@
+2025-05-30 08:52:04,147 INFO ipython === bench console session ===
+2025-05-30 08:52:04,147 INFO ipython import erpnext
+print(erpnext.__version__)
+2025-05-30 08:52:04,147 INFO ipython === session end ===
