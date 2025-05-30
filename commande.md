@@ -14,6 +14,10 @@ bench --site erpnext.localhost clear-cache
 ## redis 
 redis-server --port 11000
 
+redis-server --port 11000
+
+bench --site erpnext.localhost clear-cache
+
 sudo lsof -i :11000 -i :13000
 
 sudo kill -9 
@@ -74,3 +78,4 @@ bench --site erpnext.localhost build
 bench restart
 
 bench --site erpnext.localhost install-app hrms --force
+bench --site erpnext.localhost set-config developer_mode 1

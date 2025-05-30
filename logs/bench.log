@@ -33,8 +33,7 @@
 2025-05-29 08:30:27,734 INFO /home/valea/.local/bin/bench serve --port 8000
 2025-05-29 08:30:27,763 INFO /home/valea/.local/bin/bench worker
 2025-05-29 08:30:27,770 INFO /home/valea/.local/bin/bench watch
-<<<<<<< Updated upstream
-=======
+
 2025-05-29 09:07:49,241 INFO /home/valea/.local/bin/bench --site erpnext.localhost set-config developer_mode 1
 2025-05-30 08:48:51,514 INFO /home/valea/.local/bin/bench start
 2025-05-30 08:48:51,728 INFO /home/valea/.local/bin/bench serve --port 8000
@@ -44,7 +43,6 @@
 2025-05-30 08:51:07,237 INFO /home/valea/.local/bin/bench --site erpnext.localhost console
 2025-05-30 08:58:22,009 INFO /home/valea/.local/bin/bench version
 2025-05-30 09:00:49,897 INFO /home/valea/.local/bin/bench new-site hrms.local
->>>>>>> Stashed changes
 2025-05-30 09:16:41,475 INFO /home/valea/.local/bin/bench get-app erpnext
 2025-05-30 09:16:45,335 INFO App moved from apps/erpnext to archived/apps/erpnext-2025-05-30
 2025-05-30 09:16:45,337 LOG Getting erpnext
@@ -137,3 +135,4 @@
 2025-05-30 11:14:03,139 INFO /home/valea/.local/bin/bench worker
 2025-05-30 11:14:03,157 INFO /home/valea/.local/bin/bench watch
 2025-05-30 11:14:03,158 INFO /home/valea/.local/bin/bench schedule
+2025-05-29 09:07:49,241 INFO /home/valea/.local/bin/bench --site erpnext.localhost set-config developer_mode 1

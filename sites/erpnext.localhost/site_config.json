@@ -6,4 +6,5 @@
  "user_type_doctype_limit": {
   "employee_self_service": 40
  }
+ "developer_mode": 1
 }
