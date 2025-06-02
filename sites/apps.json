@@ -27,5 +27,15 @@
         "required": [],
         "idx": 3,
         "version": "16.0.0-dev"
+    },
+    "custom_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "666fd0e08c61f7f6ab8ca3c8b92176f9501913ed",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
     }
 }

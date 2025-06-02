@@ -79,3 +79,19 @@ bench restart
 
 bench --site erpnext.localhost install-app hrms --force
 bench --site erpnext.localhost set-config developer_mode 1
+
+
+#import 
+
+bench new-app custom_app
+
+App Title [Custom App]: Import Data
+App Description: Import des données CSV vers ERPNext
+App Publisher: TonNom
+App Email: ton.email@example.com
+App License: MIT
+Include js: 
+Include css:
+
+bench --site nomdusite.local install-app custom_app
+
