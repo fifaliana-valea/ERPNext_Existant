@@ -7308,3 +7308,5 @@ pymysql.err.OperationalError: (1054, "Unknown column 'tabContact.is_billing_cont
 2025-06-02 15:08:00,770 Successfully completed frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'hrms.hr.doctype.interview.interview.send_interview_reminder',..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='erpnext.localhost', user='Administrator') job in 0:00:00.085228s on worker 62978baa5dd0481e80f3703c72ab8dd5
 2025-06-02 15:08:00,771 home-valea-Documents-Eval-ERPNext_Existant:default: Job OK (erpnext.localhost||scheduled_job||3b5tgt2m0m)
 2025-06-02 15:08:00,771 Result is kept for 600 seconds
+2025-06-02 15:09:04,704 Worker 62978baa5dd0481e80f3703c72ab8dd5 [PID 70987]: warm shut down requested
+2025-06-02 15:09:04,705 Unsubscribing from channel rq:pubsub:62978baa5dd0481e80f3703c72ab8dd5
