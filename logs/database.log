@@ -350,3 +350,47 @@ ALTER TABLE `tabEmployee Other Income` MODIFY `amount` decimal(21,9) NOT NULL DE
 ALTER TABLE `tabEmployee Tax Exemption Declaration Category` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `max_amount` decimal(21,9) NOT NULL DEFAULT 0.0
 2025-05-30 11:09:25,178 WARNING database DDL Query made to DB:
 ALTER TABLE `tabEmployee Tax Exemption Proof Submission` MODIFY `exemption_amount` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `total_actual_amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2025-06-03 10:52:28,119 WARNING database DDL Query made to DB:
+create table `tabinit_data` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-06-03 11:25:51,925 WARNING database DDL Query made to DB:
+ALTER TABLE `tabinit_data` ADD COLUMN `company` tinyint NOT NULL DEFAULT 0, ADD COLUMN `holiday_list` tinyint NOT NULL DEFAULT 0, ADD COLUMN `employee` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_component` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_structure` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_structure_assignment` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_slip` tinyint NOT NULL DEFAULT 0
+2025-06-03 11:33:10,420 WARNING database DDL Query made to DB:
+ALTER TABLE `tabinit_data` MODIFY `holiday_list` tinyint NOT NULL DEFAULT 0, MODIFY `salary_slip` tinyint NOT NULL DEFAULT 0, MODIFY `employee` tinyint NOT NULL DEFAULT 0, MODIFY `salary_component` tinyint NOT NULL DEFAULT 0, MODIFY `salary_structure_assignment` tinyint NOT NULL DEFAULT 0, MODIFY `salary_structure` tinyint NOT NULL DEFAULT 0
+2025-06-03 13:34:16,896 WARNING database DDL Query made to DB:
+create table `tabInit Data` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2025-06-03 13:36:35,648 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInit Data` ADD COLUMN `company` tinyint NOT NULL DEFAULT 0, ADD COLUMN `company_copy` tinyint NOT NULL DEFAULT 0, ADD COLUMN `holiday_list` tinyint NOT NULL DEFAULT 0, ADD COLUMN `employee` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_component` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_structure` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_structure_assignment` tinyint NOT NULL DEFAULT 0, ADD COLUMN `salary_slip` tinyint NOT NULL DEFAULT 0
+2025-06-03 14:02:12,364 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInit Data` MODIFY `salary_slip` tinyint NOT NULL DEFAULT 0, MODIFY `salary_structure_assignment` tinyint NOT NULL DEFAULT 0, MODIFY `salary_component` tinyint NOT NULL DEFAULT 0, MODIFY `employee` tinyint NOT NULL DEFAULT 0, MODIFY `salary_structure` tinyint NOT NULL DEFAULT 0

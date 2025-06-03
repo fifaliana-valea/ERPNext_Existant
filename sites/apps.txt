@@ -2,3 +2,4 @@ frappe
 erpnext
 hrms
 custom_app
+custom_reset
