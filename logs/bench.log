@@ -177,3 +177,55 @@
 2025-06-02 13:42:24,775 INFO /home/valea/.local/bin/bench watch
 2025-06-02 13:42:24,777 INFO /home/valea/.local/bin/bench schedule
 2025-06-02 13:42:24,783 INFO /home/valea/.local/bin/bench worker
+2025-06-03 10:41:42,224 INFO /home/valea/.local/bin/bench start
+2025-06-03 10:41:42,433 INFO /home/valea/.local/bin/bench schedule
+2025-06-03 10:41:42,434 INFO /home/valea/.local/bin/bench worker
+2025-06-03 10:41:42,435 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-06-03 10:41:42,466 INFO /home/valea/.local/bin/bench watch
+2025-06-03 10:46:55,600 INFO /home/valea/.local/bin/bench --site erpnext.localhost set-config developer_mode 1
+2025-06-03 10:47:22,703 INFO /home/valea/.local/bin/bench --site erpnext.localhost set-config developer_mode 1
+2025-06-03 10:47:44,747 INFO /home/valea/.local/bin/bench start
+2025-06-03 10:47:44,958 INFO /home/valea/.local/bin/bench schedule
+2025-06-03 10:47:44,958 INFO /home/valea/.local/bin/bench worker
+2025-06-03 10:47:44,962 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-06-03 10:47:44,979 INFO /home/valea/.local/bin/bench watch
+2025-06-03 12:00:01,383 INFO /home/valea/.local/bin/bench --verbose --site all backup
+2025-06-03 13:30:05,352 INFO /home/valea/.local/bin/bench new-app custom_reset
+2025-06-03 13:30:05,359 LOG creating new app custom_reset
+2025-06-03 13:32:05,064 LOG Installing custom_reset
+2025-06-03 13:32:05,066 DEBUG cd /home/valea/Documents/Eval/ERPNext_Existant && /home/valea/Documents/Eval/ERPNext_Existant/env/bin/python -m pip install --quiet --upgrade -e /home/valea/Documents/Eval/ERPNext_Existant/apps/custom_reset 
+2025-06-03 13:32:08,071 DEBUG bench build --app custom_reset
+2025-06-03 13:32:08,235 INFO /home/valea/.local/bin/bench build --app custom_reset
+2025-06-03 13:32:12,098 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-06-03 13:33:01,506 INFO /home/valea/.local/bin/bench --site erpnext.localhost install-app custom_reset
+2025-06-03 13:33:16,796 INFO /home/valea/.local/bin/bench restart
+2025-06-03 13:33:17,134 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-06-03 13:33:23,632 INFO /home/valea/.local/bin/bench start
+2025-06-03 13:33:23,903 INFO /home/valea/.local/bin/bench worker
+2025-06-03 13:33:23,911 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-06-03 13:33:23,913 INFO /home/valea/.local/bin/bench schedule
+2025-06-03 13:33:23,940 INFO /home/valea/.local/bin/bench watch
+2025-06-03 13:46:57,029 INFO /home/valea/.local/bin/bench restart
+2025-06-03 13:46:58,225 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-06-03 13:47:04,787 INFO /home/valea/.local/bin/bench start
+2025-06-03 13:47:05,047 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-06-03 13:47:05,060 INFO /home/valea/.local/bin/bench worker
+2025-06-03 13:47:05,061 INFO /home/valea/.local/bin/bench watch
+2025-06-03 13:47:05,072 INFO /home/valea/.local/bin/bench schedule
+2025-06-03 14:02:50,675 INFO /home/valea/.local/bin/bench start
+2025-06-03 14:02:50,963 INFO /home/valea/.local/bin/bench watch
+2025-06-03 14:02:50,965 INFO /home/valea/.local/bin/bench worker
+2025-06-03 14:02:50,975 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-06-03 14:02:50,979 INFO /home/valea/.local/bin/bench schedule
+2025-06-03 14:03:00,695 INFO /home/valea/.local/bin/bench restart
+2025-06-03 14:03:02,189 INFO A newer version of bench is available: 5.24.1 → 5.25.1
+2025-06-03 14:03:46,537 INFO /home/valea/.local/bin/bench start
+2025-06-03 14:03:46,793 INFO /home/valea/.local/bin/bench watch
+2025-06-03 14:03:46,799 INFO /home/valea/.local/bin/bench serve --port 8000
+2025-06-03 14:03:46,825 INFO /home/valea/.local/bin/bench schedule
+2025-06-03 14:03:46,841 INFO /home/valea/.local/bin/bench worker
+2025-06-03 16:02:13,387 INFO /home/valea/.local/bin/bench start
+2025-06-03 16:02:13,602 INFO /home/valea/.local/bin/bench schedule
+2025-06-03 16:02:13,603 INFO /home/valea/.local/bin/bench watch
+2025-06-03 16:02:13,606 INFO /home/valea/.local/bin/bench worker
+2025-06-03 16:02:13,648 INFO /home/valea/.local/bin/bench serve --port 8000
