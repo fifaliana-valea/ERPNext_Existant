@@ -7,3 +7,24 @@ Form Dict: {'Employees': [{'Id': '1', 'LastName': 'Rakoto', 'FirstName': 'Alain'
 2025-06-01 16:07:51,838 ERROR frappe New Exception collected in error log
 Site: erpnext.localhost
 Form Dict: {}
+2025-06-02 20:39:32,138 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status'], 'filters': '[[\\"employee\\",\\"=\\",\\"HR-EMP-00001\\"]]', 'limit_start': '0', 'limit_page_length': '20'}
+2025-06-02 20:39:34,811 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status'], 'filters': '[[\\"employee\\",\\"=\\",\\"HR-EMP-00001\\"]]', 'limit_start': '0', 'limit_page_length': '20'}
+2025-06-02 20:39:40,440 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status'], 'filters': '[[\\"employee\\",\\"=\\",\\"HR-EMP-00001\\"]]', 'limit_start': '0', 'limit_page_length': '20'}
+2025-06-02 20:50:23,282 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status'], 'filters': '[[\\"employee\\",\\"=\\",\\"HR-EMP-00003\\"]]', 'limit_start': '0', 'limit_page_length': '20'}
+2025-06-02 21:24:47,470 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': '["*"]'}
+2025-06-02 21:24:54,013 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': '["*"]'}
+2025-06-02 23:47:59,354 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status'], 'filters': '[["employee","=","HR-EMP-00003"]]', 'or_filters': 'MONTH(start_date) = 1', 'limit_page_length': 20}

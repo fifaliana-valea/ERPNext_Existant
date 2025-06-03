@@ -92,6 +92,7 @@ App Email: ton.email@example.com
 App License: MIT
 Include js: 
 Include css:
+create .. {Y/N}: N
 
-bench --site nomdusite.local install-app custom_app
+bench --site erpnext.local install-app custom_app
 
