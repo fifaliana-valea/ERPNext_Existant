@@ -6,6 +6,19 @@ git commit -m "Ajout du dossier apps"
 
 git push origin init_projet
 
+cd apps/custom_reset
+git status
+# Tu verras les fichiers modifiés à valider ici
+git add .
+git commit -m "Modifications dans custom_reset"
+git push   # si tu veux envoyer ces changements vers le dépôt distant
+
+cd ../..
+git add apps/custom_reset   # Cela va enregistrer le nouveau commit du sous-module dans le projet parent
+git commit -m "Mise à jour du sous-module custom_reset"
+git push
+
+
 # Framework
 
 
