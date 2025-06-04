@@ -7,3 +7,87 @@ Form Dict: {'Employees': [{'Id': '1', 'LastName': 'Rakoto', 'FirstName': 'Alain'
 2025-06-01 16:07:51,838 ERROR frappe New Exception collected in error log
 Site: erpnext.localhost
 Form Dict: {}
+2025-06-03 11:47:20,819 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'docs': '{"docstatus":0,"doctype":"Salary Slip","name":"new-salary-slip-qkmoqjodbi","__islocal":1,"__unsaved":1,"owner":"Administrator","company":"Valea","posting_date":"2025-06-03","status":"Draft","currency":"USD","exchange_rate":1,"payroll_frequency":"","salary_slip_based_on_timesheet":0,"deduct_tax_for_unclaimed_employee_benefits":0,"deduct_tax_for_unsubmitted_tax_exemption_proof":0,"timesheets":[],"earnings":[],"deductions":[],"leave_details":[],"salary_structure":"gasy2","employee_name":"Fifah","department":null,"designation":null,"branch":null,"employee":"HR-EMP-00001"}', 'method': 'get_emp_and_working_day_details', 'cmd': 'run_doc_method'}
+2025-06-03 13:44:35,734 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doctype': 'init_data', 'fields': '["`tabinit_data`.`name`","`tabinit_data`.`owner`","`tabinit_data`.`creation`","`tabinit_data`.`modified`","`tabinit_data`.`modified_by`","`tabinit_data`.`_user_tags`","`tabinit_data`.`_comments`","`tabinit_data`.`_assign`","`tabinit_data`.`_liked_by`","`tabinit_data`.`docstatus`","`tabinit_data`.`idx`"]', 'filters': '[]', 'order_by': '`tabinit_data`.creation desc', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '', 'with_comment_count': '1', 'cmd': 'frappe.desk.reportview.get'}
+2025-06-03 13:44:42,514 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'name': 'init_data', 'cmd': 'frappe.desk.desk_page.getpage'}
+2025-06-03 13:45:32,415 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:35,092 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:35,900 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:36,229 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:36,580 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:36,911 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:37,318 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:37,729 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-iepcynlhnz","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:46,253 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-nmxiuljloc","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:47,048 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-nmxiuljloc","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:45:47,432 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-nmxiuljloc","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:46:02,853 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-zxaxxjtomn","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:46:03,640 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-zxaxxjtomn","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:46:03,969 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-zxaxxjtomn","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 13:47:49,791 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Init Data","name":"new-init-data-ajqftffvwx","__islocal":1,"__unsaved":1,"owner":"Administrator","company":0,"company_copy":0,"holiday_list":0,"employee":0,"salary_component":0,"salary_structure":0,"salary_structure_assignment":0,"salary_slip":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-06-03 16:15:42,595 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'cmd': 'custom_reset.api.reset_data'}
+2025-06-03 16:15:43,724 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'cmd': 'custom_reset.api.reset_data'}
+2025-06-03 16:16:38,775 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-03 16:18:51,292 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-03 16:20:08,995 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-03 16:20:11,210 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-03 16:21:36,916 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-03 16:21:44,887 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-03 16:24:45,369 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-03 16:27:37,822 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'cmd': 'custom_reset.api.reset_data.reset_data'}
