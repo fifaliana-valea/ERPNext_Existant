@@ -91,3 +91,63 @@ Form Dict: {}
 2025-06-03 16:27:37,822 ERROR frappe New Exception collected in error log
 Site: erpnext.localhost
 Form Dict: {'cmd': 'custom_reset.api.reset_data.reset_data'}
+2025-06-04 10:44:03,513 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'?fields': '["*"]'}
+2025-06-04 17:41:20,780 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'earnings', 'deductions'], 'limit_page_length': 20}
+2025-06-04 17:42:31,474 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status', 'earnings', 'deductions'], 'limit_page_length': 20}
+2025-06-04 19:40:16,908 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {}
+2025-06-04 19:40:44,977 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'limit_page_length': 20}
+2025-06-04 19:43:05,433 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'limit_page_length': 20}
+2025-06-04 19:43:43,479 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'limit_page_length': 20}
+2025-06-04 19:44:03,367 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'limit_page_length': 20}
+2025-06-05 20:12:35,199 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status'], 'filters': '[["start_date","like","%-01-%"]]', 'limit': '5', 'offset': '0', 'limit_page_length': '5'}
+2025-06-05 20:12:44,500 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status'], 'filters': '[["start_date","like","%-01-%"]]', 'limit': '5', 'offset': '0', 'limit_page_length': '5'}
+2025-06-05 21:16:14,477 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status', 'earnings', 'deductions'], 'filters': '[["start_date","between","2025-01-01","2025-01-31"]]', 'limit_start': '0', 'limit_page_length': '10'}
+2025-06-05 21:16:14,643 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status', 'earnings', 'deductions'], 'limit_start': '0', 'limit_page_length': '5'}
+2025-06-05 21:16:17,626 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status', 'earnings', 'deductions'], 'limit_start': '0', 'limit_page_length': '10'}
+2025-06-05 21:16:17,647 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status', 'earnings', 'deductions'], 'limit_start': '0', 'limit_page_length': '5'}
+2025-06-05 21:16:19,260 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status', 'earnings', 'deductions'], 'limit_start': '0', 'limit_page_length': '10'}
+2025-06-05 21:16:19,278 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'salary_structure', 'company', 'posting_date', 'start_date', 'end_date', 'net_pay', 'gross_pay', 'currency', 'status', 'earnings', 'deductions'], 'limit_start': '0', 'limit_page_length': '5'}
+2025-06-05 21:18:26,778 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'start_date'], 'filters': '[["start_date","between","2025-01-01","2025-01-31"]]', 'limit_start': '0', 'limit_page_length': '10'}
+2025-06-05 21:21:11,966 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'start_date'], 'filters': '[["start_date","between","2025-01-01","2025-01-31"]]', 'limit_start': '0', 'limit_page_length': '10'}
+2025-06-05 21:21:44,590 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'start_date'], 'filters': '[["start_date","between","2025-01-01","2025-01-31"]]', 'limit_start': '0', 'limit_page_length': '10'}
+2025-06-05 21:23:32,460 ERROR frappe New Exception collected in error log
+Site: erpnext.localhost
+Form Dict: {'fields': ['name', 'employee', 'employee_name', 'start_date'], 'filters': '[[\\"start_date\\",\\"between\\",\\"2025-01-01\\",\\"2025-01-31\\"]]', 'limit_page_length': 20}
